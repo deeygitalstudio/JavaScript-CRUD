@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript crud</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body style="color: #fff; background-color: #1d2630;">
+
+<div class="container mt-5">
+    <div class="text-center">
+       <h1 class="mb-5">Javascript Crud Operation</h1>
+    </div>
+    <div class="main row justify-content-center" >
+        <form action="" class="justify-content-center mb-4" id="student-form">
+            <div class="col-10 col-md-8 mb-3">
+                <label for="">FirstName</label>
+                <input type="text" class="form-control" id="first" autocomplete="off">
+            </div>
+            <div class="col-10 col-md-8 mb-3">
+                <label for="">LastName</label>
+                <input type="text" class="form-control" id="last" autocomplete="off">
+            </div>
+            <div class="col-10 col-md-8 mb-4">
+                <label for="">Number</label>
+                <input type="number" class="form-control" id="num" autocomplete="off">
+            </div>
+            <div class="col-10 col-md-8">
+                
+                <input type="submit" value="Save Data" onclick="saveData()" class="btn btn-success" id="save" autocomplete="off" style="display: none;">
+                <input type="submit" value="Submit" onclick="addData()" class="btn btn-success" id="submit" autocomplete="off" style="display: block;">
+              
+            </div>
+        </form>
+         <div class="col-12 mt-5">
+           <table class="table-bordered table table-dark">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lasttname</th>
+                    <th>Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="student-list">
+             <tr>
+               
+                
+             </tr>
+            </tbody>
+
+        </table>
+         </div>
+      
+    </div>
+  
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="./app.js"></script>
+<script src="./bootstrap.min.js"></script>
+</body>
+</html>
