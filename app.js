@@ -182,7 +182,7 @@ function showData() {
 
 
 function addData(e) {
- e.preventDefault();
+e.preventDefault();
     if (validateForm()) {
         var firstEl = document.getElementById('first').value;
         var lastEl = document.getElementById('last').value;
@@ -204,6 +204,9 @@ function addData(e) {
         document.getElementById('num').value = '';
     }
 }
+
+document.getElementById('submit').addEventListener('click', addData);
+
   
 document.onload = showData();
 
