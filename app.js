@@ -181,7 +181,8 @@ function showData() {
 
 
 
-function addData() {
+function addData(e) {
+ e.preventDefault();
     if (validateForm()) {
         var firstEl = document.getElementById('first').value;
         var lastEl = document.getElementById('last').value;
